@@ -1,0 +1,26 @@
+<% layout('./layout/Boilerplate') %>
+<div class="container text-center">
+  <h1 class="mb-2">All the jobs are listed below</h1>
+  <%for(let post of application.applications){%>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="<%= post.image %>" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><%= post.name %></h5>
+            <h6 class="card-text text-muted"><%= post.location %></h6>
+            <p class="card-text"><%= post.salary %></p>
+            <a class="card-link btn btn-info" href="/job/<%=post._id%>">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <%}%>
+</div>

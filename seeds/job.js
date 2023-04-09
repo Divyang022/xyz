@@ -1,0 +1,34 @@
+module.exports = [
+    {
+        name:"JPMC",
+        salary:"90000",
+        image:"https://www.logo.wine/a/logo/JPMorgan_Chase/JPMorgan_Chase-Logo.wine.svg",
+        wfh:"0",
+        full_time:"1",
+        part_time:"0",
+    },
+    {
+        name:"Goldman Sachs",
+        salary:"50000",
+        image:"https://www.logo.wine/a/logo/Goldman_Sachs/Goldman_Sachs-Logo.wine.svg",
+        wfh:"0",
+        full_time:"1",
+        part_time:"0",
+    },
+    {
+        name:"Paytm",
+        salary:"70000",
+        image:"https://www.logo.wine/a/logo/Paytm/Paytm-Logo.wine.svg",
+        wfh:"1",
+        full_time:"1",
+        part_time:"0",
+    },
+    {
+        name:"Airtel",
+        salary:"60000",
+        image:"https://www.logo.wine/a/logo/Bharti_Airtel/Bharti_Airtel-Logo.wine.svg",
+        wfh:"1",
+        full_time:"0",
+        part_time:"1",
+    },
+]

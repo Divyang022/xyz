@@ -1,0 +1,24 @@
+<% layout('layout/Boilerplate') %>
+<div class="card ">
+  <img src="<%= jobs.image %>" alt="<%= jobs.name %>" class="img-thumbnail">
+  <div class="card-body">
+      <h5 class="card-title">
+          <%= jobs.name%>
+      </h5>
+      <p class="card-text">
+          <%= jobs.domain%>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestias vel, saepe quis, soluta sunt, illo recusandae odio magnam consectetur vero praesentium tempora. Ex aut modi totam voluptatum voluptatem. Officia.</span>
+      </p>
+  </div>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item text-muted">
+          <%= jobs.location%>
+      </li>
+      <li class="list-group-item"><%= jobs.salary%></li>
+  </ul>
+      <div class="card-body">
+          <form class="d-inline" action="/job/<%=jobs._id%>" method="POST">
+              <button class="btn btn-success">Apply Now!</button>
+          </form>
+      </div>
+</div>
